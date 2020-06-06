@@ -1,0 +1,7 @@
+= ts
+* tsc -init
+* add: include, exclude
+
+= Tests
+1) npm i --save-dev jasmine jasmine-ts @types/jasmine jasmine-spec-reporter ts-node
+2) jasmine init
