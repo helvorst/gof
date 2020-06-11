@@ -1,6 +1,6 @@
 import { processor } from './processor';
 describe('processor', () => {
-    it('should return hello', () => {
-        expect(processor()).toEqual('FOO<VALID>');
+    it('should return required error', () => {
+        expect(processor('')).toEqual('["request is required"]');
     })
 })

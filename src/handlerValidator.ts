@@ -2,7 +2,11 @@ import { AbstractHandler } from "./abstractHandler";
 
 export class HandlerValidator extends AbstractHandler {
     handle(request: string) {
-        request = request + '<valid>';
-        return super.handle(request);
+        if(!request) {
+            this.write('request is required');
+            return this.result();
+        } else {
+            return super.handle(request);
+        }
     }
 }
