@@ -1,6 +1,6 @@
-import { hello } from './processor';
+import { processor } from './processor';
 describe('processor', () => {
     it('should return hello', () => {
-        expect(hello()).toEqual('hello');
+        expect(processor()).toEqual('FOO<VALID>');
     })
 })
