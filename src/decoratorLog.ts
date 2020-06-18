@@ -1,11 +1,14 @@
+import "reflect-metadata";
+
 export function log(origin: string) {
 
     return function (
         target: Object,
         property: string,
-        propertyDescriptor: PropertyDescriptor)
-        : PropertyDescriptor {
+        propertyDescriptor: PropertyDescriptor): PropertyDescriptor {
 
+        const t = Reflect.getMetadata("design:type", target, property);
+        console.log(t);
 
         const method = propertyDescriptor.value;
 
