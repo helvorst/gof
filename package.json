@@ -18,7 +18,6 @@
     "@open-wc/karma-esm": "^2.16.14",
     "@open-wc/testing-karma": "^3.4.4",
     "@types/jest": "^26.0.9",
-    "``jest-runner-tsc``": "^1.6.0",
     "html-webpack-plugin": "^4.3.0",
     "jest": "^26.2.2",
     "karma": "^5.0.9",
