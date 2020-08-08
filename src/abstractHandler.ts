@@ -2,7 +2,7 @@ import { Handler } from "./handler";
 
 export class AbstractHandler implements Handler {
     private nextHandler: Handler | undefined;
-    private messages: Array<string> = [];
+    private message = '';
 
     next(handler: Handler) {
         this.nextHandler = handler;
@@ -17,10 +17,10 @@ export class AbstractHandler implements Handler {
     }
 
     write(message: string) {
-        this.messages.push(message);
+        this.message = message;
     }
 
     result(): string {
-        return JSON.stringify(this.messages);
+        return this.message;
     }
 }
