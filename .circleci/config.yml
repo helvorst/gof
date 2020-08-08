@@ -2,22 +2,12 @@ version: 2.1
 
 # Define the jobs we want to run for this project
 jobs:
-  build:
+  verify:
     working_directory: ~/temp
     docker:
       - image: circleci/node:current
     steps:
       - checkout
       - run: npm i
-  test:
-    steps:
-      - run: npm run test
+      - run: npm test
 
-# Orchestrate our job run sequence
-workflows:
-  build_and_test:
-    jobs:
-      - build
-      - test:
-          requires: 
-            - build
