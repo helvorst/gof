@@ -1,4 +1,7 @@
-export function log(origin: string) {
+export function log(origin: string): (
+    target: Object,
+    property: string,
+    propertyDescriptor: PropertyDescriptor) => PropertyDescriptor {
 
     return function (
         target: Object,
