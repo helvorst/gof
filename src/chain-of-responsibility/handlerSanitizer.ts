@@ -1,8 +1,7 @@
 import { AbstractHandler } from "./abstractHandler";
-import { log } from "./decoratorLog";
 
 export class HandlerSanitizer extends AbstractHandler {
-    @log('sanitize')
+
     handle(request: string) {
         console.log('sanitizer handler called')
         
