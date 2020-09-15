@@ -11,6 +11,6 @@ jobs:
       - run: 
           name: "Test"
           command: |
-          cd ts
-          npm i 
-          npm test
+            cd ts
+            npm i 
+            npm test
