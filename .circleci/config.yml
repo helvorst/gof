@@ -10,7 +10,7 @@ jobs:
       - checkout
       - run: 
         name: Test
-        command: |
+        command: 
         cd ts && 
         npm i && 
         npm test &&
