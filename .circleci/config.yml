@@ -8,7 +8,9 @@ jobs:
       - image: circleci/node:current
     steps:
       - checkout
-      - run: cd ts
-      - run: npm i
-      - run: npm test
+      - run: 
+        command: |
+        cd ts
+        npm i
+        npm test
 
