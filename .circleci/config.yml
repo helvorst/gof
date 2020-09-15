@@ -9,9 +9,8 @@ jobs:
     steps:
       - checkout
       - run: 
-        name: Test
-        command: 
-        cd ts && 
-        npm i && 
-        npm test &&
-
+          name: "Test"
+          command: |
+          cd ts
+          npm i 
+          npm test
